@@ -55,7 +55,7 @@ const Comments = () => {
   const [snackbar, setSnackbar] = useState({ open: false, message: '', severity: 'success' });
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/comments')
+    fetch('https://test-project-4ykx.onrender.com/api/comments')
       .then(res => res.json())
       .then(data => setComments(data))
       .catch(err => {
@@ -85,7 +85,7 @@ const Comments = () => {
     const comment = { author: name, text: newComment, rating };
 
     try {
-      const res = await fetch('http://localhost:5000/api/comments', {
+      const res = await fetch('https://test-project-4ykx.onrender.com/api/comments', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(comment)
