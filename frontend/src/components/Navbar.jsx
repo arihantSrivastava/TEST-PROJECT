@@ -21,7 +21,7 @@ import BookIcon from '@mui/icons-material/MenuBook';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import ContactSupportIcon from '@mui/icons-material/ContactSupport';
-import XIcon from '@mui/icons-material/X';
+import { FaXTwitter } from 'react-icons/fa6'; // ✅ Correct icon import
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   background: 'linear-gradient(135deg, #1E90FF 0%, #00BFFF 100%)',
@@ -123,7 +123,7 @@ const Navbar = () => {
         <SocialButton
           fullWidth
           onClick={handleXClick}
-          startIcon={<XIcon />}
+          startIcon={<FaXTwitter />}
         >
           @JamesClear
         </SocialButton>
@@ -189,7 +189,7 @@ const Navbar = () => {
             </Typography>
             <SocialButton
               onClick={handleXClick}
-              startIcon={<XIcon />}
+              startIcon={<FaXTwitter />}
             >
               @JamesClear
             </SocialButton>
@@ -221,4 +221,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

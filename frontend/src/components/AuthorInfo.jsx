@@ -10,11 +10,10 @@ import {
   useTheme,
   useMediaQuery,
   Container,
-  Divider
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import XIcon from '@mui/icons-material/X';
+import { FaXTwitter } from 'react-icons/fa6'; // ✅ Fixed Twitter/X icon
 import LanguageIcon from '@mui/icons-material/Language';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
@@ -101,7 +100,7 @@ const AuthorInfo = () => {
                     target="_blank"
                     sx={{ color: '#000000', '&:hover': { transform: 'scale(1.1)' } }}
                   >
-                    <XIcon />
+                    <FaXTwitter style={{ fontSize: '24px' }} />
                   </IconButton>
                   <IconButton 
                     href="https://jamesclear.com" 
@@ -186,4 +185,4 @@ const AuthorInfo = () => {
   );
 };
 
-export default AuthorInfo; 
+export default AuthorInfo;
